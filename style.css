@@ -1,0 +1,17 @@
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(26, 170, 170);
+    text-align:center;
+    font-size: 18px;
+}
+
+#block1:hover, #block2:hover, #block3:hover, #block4:hover{
+    display: block;
+    background-color: rgb(187, 184, 184);
+    color: white;
+
+}

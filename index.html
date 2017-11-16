@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav" style="height:70px;  padding-top:10px;" >
+      <li><a href="#"> <img src="images/blog-3.png" height="20px" width="100px" /></a></li>
+      <li><a style="color:white; font-size:16px;">Vignesh's Blog </a> </li>
+    </ul>
+    <ul id="nav" class="nav navbar-nav navbar-right" style="padding-top:10px;">
+      <li id="block1"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+      <li id="block2"><a href="#">About Us</a></li>
+      <li id="block3"><a href="#">Contact Us</a></li>
+      <li id="block4"><a href="#">New Blog</a></li>
+    </ul>
+  </div>
+</nav>
+ 
+<!-- Div for body content to be print -->
+<div class="container">
+  
+</div>
+
+<!-- Footer -->
+<footer style="padding-top:25px;"> vignesh.s<i class="fa fa-copyright" aria-hidden="true"></i>copywright.com</footer>
+</body>
+
+<script> 
+//Active link js
+var selector = '#nav li';
+$(selector).on('click', function(){
+    $(selector).removeClass('active');
+    $(this).addClass('active');
+});
+</script>
+
+</html>
