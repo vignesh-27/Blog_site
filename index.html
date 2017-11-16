@@ -29,7 +29,7 @@
 </nav>
  
 <!-- Div for body content to be print -->
-<div class="container">
+<div id="body">
   
 </div>
 
@@ -44,6 +44,10 @@ $(selector).on('click', function(){
     $(selector).removeClass('active');
     $(this).addClass('active');
 });
+
+$(document).ready(function(){
+            $("#body").load("home.html");
+        });
 </script>
 
 </html>
