@@ -20,7 +20,7 @@
       <li><a style="color:white; font-size:16px;">Vignesh's Blog </a> </li>
     </ul>
     <ul id="nav" class="nav navbar-nav navbar-right" style="padding-top:10px;">
-      <li id="block1"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+      <li id="block1"><a onclick="indexfunction()"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
       <li id="block2"><a href="#">About Us</a></li>
       <li id="block3"><a href="#">Contact Us</a></li>
       <li id="block4"><a href="#">New Blog</a></li>
@@ -29,25 +29,14 @@
 </nav>
  
 <!-- Div for body content to be print -->
-<div id="body">
-  
-</div>
+<div id="main_body"  style="padding-left:30px; width:98%; text-align:justify; font-size:15px;">
+    <div id="blog_id" style="width:100%; padding:30px;"></div> 
+</div> 
 
 <!-- Footer -->
-<footer style="padding-top:25px;"> vignesh.s<i class="fa fa-copyright" aria-hidden="true"></i>copywright.com</footer>
+<!-- <footer style="padding-top:25px;"> vignesh.s
+   <i class="fa fa-copyright" aria-hidden="true"></i>copywright.com</footer> -->
 </body>
 
-<script> 
-//Active link js
-var selector = '#nav li';
-$(selector).on('click', function(){
-    $(selector).removeClass('active');
-    $(this).addClass('active');
-});
-
-$(document).ready(function(){
-            $("#body").load("home.html");
-        });
-</script>
-
 </html>
+

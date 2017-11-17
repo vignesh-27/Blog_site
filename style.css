@@ -1,5 +1,5 @@
 footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     height: 100px;
@@ -14,4 +14,9 @@ footer {
     background-color: rgb(187, 184, 184);
     color: white;
 
+}
+
+#main_body{
+    font-size: 18px;
+    padding-left: 30px;
 }
